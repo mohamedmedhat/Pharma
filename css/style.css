@@ -134,7 +134,7 @@ body{
 /*//////////////////////////////////////////////////*/
 .home{
     position: relative;
-    background-image: url('/images/home6.jpg');
+    background-image: url('../images/home6.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 85vh;
@@ -329,7 +329,7 @@ body{
 }
 
 .middleinfo{
-    background-image: url('/images/c2.jpg');
+    background-image: url('../images/c2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 300px;
@@ -339,7 +339,7 @@ body{
 }
 
 .rightinfo{
-    background-image: url('/images/c3.jpg');
+    background-image: url('../images/c3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 300px;
@@ -465,10 +465,10 @@ body{
     transition: 1.2s;
 }
 
-.cardImg,.front, .back, .frontIng {
+.cardImg,.front, .back{
     width: 420px;
     height: 380px;
-    box-shadow: 0px 1px 5px gray;
+    /* box-shadow: 0px 1px 5px gray; */
 }
 .cardImg{  /* Parent*/
     position: relative;
@@ -477,6 +477,7 @@ body{
 }
 .front, .back{
     position: absolute;
+    box-shadow: 0px 1px 5px gray;
 }
 
 .front{
@@ -486,6 +487,36 @@ body{
 .back{
     background-color: rgb(204, 148, 138);
     transform: rotateY(180deg);
+}
+#f1{
+    background-image: url('../images/c1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#f2{
+    background-image: url('../images/c2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#f3{
+    background-image: url('../images/c3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#f4{
+    background-image: url('../images/c4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#f5{
+    background-image: url('../images/c5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#f6{
+    background-image: url('../images/c6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .backIcons{
