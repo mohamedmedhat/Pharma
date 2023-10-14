@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+hr{
+    background-color: tomato;
+    height: 2px;
+    box-shadow: 0px 1px 15px tomato;
+    margin-top: 50px;
+}
+
+body{
+    background-color: rgb(252, 249, 249);
+    perspective: 700px;
+}
+
+.container{
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    height: auto;
+    width: 180vh;
+    padding: 10px;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    height: 90px;
+    align-items: center;
+}
+.logo p{
+    font-family: 'Lobster';
+    font-size: 45px;
+    font-weight: 600;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+}
+.logo p span{
+    color: rgb(221, 62, 62);
+}
+.links ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+.links ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: .3s;
+    text-shadow: 0px 1px 1px black;
+}
+.links ul li a:hover{
+    color: rgb(150, 8, 8);
+    text-shadow:0px 1px 25px rgb(150, 8, 8);
+    transition: .5s;
+}
+
+.dropdownmenu{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    /* background-color: rgba(153, 149, 149, 0.2); */
+    background-color: rgba(255, 255, 255,.5);
+    border: 1px solid black;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.dropdownmenu .head{
+    font-size: 25px;
+    border-bottom: 1px dotted rgb(110, 13, 13);
+}
+.dropdownmenu p{
+    cursor: pointer;
+    margin: 5px;
+}
+
+.Drop:hover .dropdownmenu{
+    visibility: visible;
+    transition: 2s;
+}
+
+.vrline{
+    position: relative;
+    top: 25px;
+    width: 1px;
+    height: 110px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.headIcons{
+    position: relative;
+    padding: 6px;
+    gap: 20px;
+}
+.headIcons i{
+    font-size: 25px;
+    margin: 10px;
+}
+.headIcons i:hover{
+    color: tomato;
+    text-shadow: 0px 1px 1px tomato;
+}
+
+
+.cartCOunt{
+    position: absolute;
+    right: 1px;
+    top: 20px;
+    display: inline;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: rgba(246, 24, .24,.7);
+}
+.cartCOunt p{
+    text-align: center;
+}
+/*==============================================================*/
+
+.services, .products, .info, .category{
+    margin-top: 80px;
+}
+
+/*//////////////////////////////////////////////////*/
+.home{
+    position: relative;
+    background-image: url('/images/home6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+    padding: 10px;
+}
+.htup{
+    position: absolute;
+    bottom: 50%;
+    left: 30px;
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+}
+.htdown{
+    position: absolute;
+    bottom: 45%;
+    left: 30px;
+    color: white;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 40xp;
+}
+
+.homebtn{
+    position: absolute;
+    bottom: 35%;
+    left: 30px;
+    background-color: rgba(25, 25, 216, 0.7);
+    color: white;
+    text-shadow: 0px 1px 1.5px black;
+    font-weight: 600;
+    border:.5px solid  rgb(25, 25, 216);
+    border-radius: 10px;
+    box-shadow: 0px 1px 25px rgb(25, 25, 216);
+    cursor: pointer;
+    padding: 4px;
+    width: 100px;
+    height: 40px;
+    transition: 1.4s;
+}
+.homebtn:hover{
+    background-color: rgba(25, 25, 216,1);
+    transform: scale(1.1,1.2);
+    box-shadow: 0px 1px 30px rgb(25, 25, 216,);
+    transition:1.4s
+}
+/**/
+.Catcontainer{
+    margin: 20px;
+}
+
+.Cattitle{
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.Cattitle p{
+    margin: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.vrLine{
+    width: 100px;
+    height: 4px;
+    margin-top: 3px;
+    background-color: tomato;
+    box-shadow: 0px 1px 1px tomato;
+    margin: auto;
+    transition: 1.5s;
+}
+.vrLine:hover{
+    transition: 1.5s;
+    transform: scale(2,1);
+}
+.CatDescss{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    gap: 30px;
+}
+
+.Catdesc{
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgba(68, 67, 67,.4);
+    box-shadow: 0px 1px 1px rgba(68, 67, 67,.4);
+}
+
+.CatCard img{
+    height: 250px;
+    width: 300px;
+}
+
+.CatCarddesup{
+    font-size: 15px;
+    color: gray;
+    text-shadow: 0px 1px 1px gray;
+}
+
+.CatCarddesdown{
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+
+.TheBow{
+    position: absolute;
+    left: 305px;
+    bottom: -2px;
+    background-color: tomato;
+    width: 20px;
+    padding: 3px;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 3px;
+    visibility: hidden;
+    transition: 1s;
+}
+
+.Catdesc:hover .TheBow{
+    visibility: visible;
+}
+.TheBow:hover{
+    cursor: pointer;
+    background-color: rgb(216, 57, 29);
+    transform: scale(1.1,1.1);
+    transition: 1s;
+}
+/*//////////////////////////////////////////////////////////////////*/
+
+.infoContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 50px 0px;
+
+}
+
+.introduction{
+    position: relative;
+    background-color: rgba(255, 99, 71,.1);
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+}
+
+.UnderInfos{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.underLineinfo{
+    display: inline-flex;
+    width: 70px;
+    height: 3px;
+    background-color: tomato;
+    margin: 5px;
+}
+.infoLeft{
+    display: flex;
+    gap: 20px;
+}
+
+.titltintro {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.titltintro span{
+    font-weight: 600;
+    font-size: 25px;
+    text-shadow: 0px 1px 1px black;
+}
+.introdown{
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 20px;
+    text-shadow: 0px 1px 1px gray;
+}
+
+.infobody{
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    text-shadow: 0px 1px 1px black;
+}
+
+.middleinfo{
+    background-image: url('/images/c2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    transition: 1s;
+}
+
+.rightinfo{
+    background-image: url('/images/c3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+}
+
+.middleinfo:hover , .rightinfo:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.infiprice{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0px 1px 1px white;
+}
+
+.infidet{
+    font-size: 20px;
+    font-family: 600;
+    text-shadow: 0px 1px 1px black;
+}
+
+/*====================================================================*/
+
+.servicesContainer{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.SerCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px black;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    transition: 2s;
+}
+
+.SerCard:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.sercardIcon{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    align-items: center;
+}
+
+.sercardIcon img{
+    position: absolute;
+    animation-name: imageup;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.servicehead{
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+
+.servicesdesc{
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+    text-shadow: 0px 1px 1px gray;
+}
+
+@keyframes imageup{
+    0%
+    {
+        bottom: 0;
+    }
+    50%
+    {
+        bottom: 10px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
+/*=====================================================================*/
+.products{
+    height: 70vh;
+    margin-top: 40px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+
+.filterproducts{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.filterproducts p{
+    font-size: 20px;
+    transition: 1.2s;
+}
+.filterproducts p:hover{
+    color: red;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1.2s;
+}
+
+.cardImg,.front, .back, .frontIng {
+    width: 420px;
+    height: 380px;
+    box-shadow: 0px 1px 5px gray;
+}
+.cardImg{  /* Parent*/
+    position: relative;
+    transition:  all 2s;
+    transform-style: preserve-3d;
+}
+.front, .back{
+    position: absolute;
+}
+
+.front{
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.back{
+    background-color: rgb(204, 148, 138);
+    transform: rotateY(180deg);
+}
+
+.backIcons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+}
+
+.back i{
+    color: black;
+    margin: auto;
+    font-size: 30px;
+    text-shadow: 0px 1px 1px white;
+}
+
+.back i:hover{
+    color: blue;
+    text-shadow: 0px 1px 1px black;
+}
+
+.cardImg:hover{
+    transform: rotateY(180deg);
+}
+
+.details{
+    margin: 20px 0 0 5px;
+}
+.details i{
+    color: gold;
+    text-shadow: 0px 1px 1px gold;
+}
+
+.details-desc{
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 0xp 1px 1px black;
+}
+
+.details-price{
+    font-size: 17px;
+    color: gray;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px gray;
+}
